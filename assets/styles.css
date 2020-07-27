@@ -1,0 +1,107 @@
+body {
+  margin: 0;
+  background: linear-gradient(#569fc2, #3d7ebf);
+  font-family: "Rowdies", cursive;
+  font-family: "Source Sans Pro", sans-serif;
+  color: white;
+  height: 100%;
+}
+
+header {
+  width: 100%;
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #569fc2;
+}
+
+.reproductor-container {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0px 20px 0px;
+}
+
+h3 {
+  margin-bottom: 40px;
+  font-size: 40px;
+}
+
+video {
+  height: 450px;
+}
+
+.handler_player {
+  margin: 20px;
+}
+
+button {
+  cursor: pointer;
+  outline: none;
+  font-family: "Rowdies", cursive;
+  font-size: 20px;
+  background-color: #6639a6;
+  color: white;
+  border: transparent;
+  border-radius: 10px;
+  width: 150px;
+  height: 40px;
+  margin: 0 10px;
+}
+
+header img {
+  margin-right: 40px;
+  height: 96px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 70px;
+}
+
+li {
+  margin: 10px 0px;
+}
+
+.comments {
+  margin: 30px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #3d7ebf;
+  width: 100%;
+  height: 100px;
+  align-items: center;
+}
+
+h4 {
+  margin-left: 55px;
+}
+
+.social {
+  margin-right: 55px;
+}
+
+.social-link {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-size: 40px 40px;
+  margin: 0 10px;
+}
+
+.social-link.github {
+  background-image: url("./media/github.svg");
+}
+
+.social-link.twitter {
+  background-image: url("./media/twitter.svg");
+}
+.social-link.linkedin {
+  background-image: url("./media/icons8-linkedin-50.png");
+}
