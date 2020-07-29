@@ -1,19 +1,16 @@
 class MediaPlayer {
   constructor(config) {
     (this.media = config.value), (this.plugins = config.plugins || []);
-    this.autoRun();
     this.pausedByUser = false;
+    this.player;
+    this.autoRun();
   }
 
   autoRun() {
-    const player = {
+    console.log(this.pausedByUser);
+    this.player = {
       media: this.media,
-      // get paused() {
-      //   return this.pausedByUser;
-      // },
-      // set paused(value) {
-      //   this.pausedByUser = value;
-      // },
+      paused: this.pausedByUser,
       get muted() {
         return this.media.muted;
       },
@@ -23,16 +20,16 @@ class MediaPlayer {
     };
 
     this.plugins.forEach((plugin) => {
-      plugin.run(player);
+      plugin.run(this.player);
     });
   }
 
   playOrPause() {
     if (this.media.paused) {
-      this.pausedByUser = false;
+      this.player.paused = false;
       this.media.play();
     } else {
-      this.pausedByUser = true;
+      this.player.paused = true;
       this.media.pause();
     }
   }
