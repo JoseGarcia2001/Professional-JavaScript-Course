@@ -14,3 +14,17 @@ let peopleAndAges: Array<string | number> = [];
 peopleAndAges = ["Pedro", 13];
 
 // Enums como arrays con un valor en específico
+
+enum Color {
+  Red = "red",
+  Blue = "blue",
+  Green = "green",
+}
+
+let favoriteColor: Color = Color.Blue;
+
+//Any
+
+let comodin: any = "hola";
+comodin = {};
+comodin = [];
