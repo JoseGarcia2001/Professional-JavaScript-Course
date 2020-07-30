@@ -2,13 +2,16 @@
   "name": "js_pro",
   "version": "1.0.0",
   "description": "Este proyecto es para el curso Profesional de JS",
-  "main": "index.js",
   "scripts": {
-    "start": "live-server"
+    "start": "parcel index.html ejercicios/index.html ejercicios/**/*.html"
   },
-  "author": "",
+  "author": "Jose Garcia",
   "license": "ISC",
   "devDependencies": {
-    "live-server": "^1.2.1"
-  }
+    "parcel-bundler": "^1.12.4",
+    "typescript": "^3.9.7"
+  },
+  "browserslist": [
+    "last 1 Chrome version"
+  ]
 }

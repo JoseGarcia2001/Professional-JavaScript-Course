@@ -1,4 +1,4 @@
 node_modules
 BigBuckBunny.mp4
-package-lock.json
-package.json
+.cache
+dist
