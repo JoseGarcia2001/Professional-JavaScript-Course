@@ -1,4 +1,6 @@
+import MediaPlayer from "../MediaPlayer";
 class AutoPause {
+  player: MediaPlayer;
   constructor() {
     this.player;
   }
@@ -16,17 +18,17 @@ class AutoPause {
     document.addEventListener("visibilitychange", this.handlerVisibility);
   }
 
-  handlerVisibility() {
-    if (document.visibilityState === "visible" && !this.player.paused) {
+  private handlerVisibility() {
+    if (document.visibilityState === "visible" && !this.player.pausedByUser) {
       this.player.media.play();
     } else {
       this.player.media.pause();
     }
   }
 
-  handlerIntersection(entries) {
+  private handlerIntersection(entries: IntersectionObserverEntry[]) {
     const entry = entries[0];
-    if (entry.isIntersecting && !this.player.paused) {
+    if (entry.isIntersecting && !this.player.pausedByUser) {
       this.player.media.play();
     } else {
       this.player.media.pause();

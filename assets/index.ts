@@ -1,9 +1,9 @@
-import MediaPlayer from "./MediaPlayer.js";
-import AutoPlay from "./plugins/AutoPlay.js";
-import AutoPause from "./plugins/AutoPause.js";
+import MediaPlayer from "./MediaPlayer";
+import AutoPlay from "./plugins/AutoPlay";
+import AutoPause from "./plugins/AutoPause";
 
-const PlayPause = document.querySelector(".play_pause");
-const MuteUnmute = document.querySelector(".mute_unmute");
+const PlayPause: HTMLElement = document.querySelector(".play_pause");
+const MuteUnmute: HTMLElement = document.querySelector(".mute_unmute");
 const video = document.querySelector("video");
 
 const player = new MediaPlayer({

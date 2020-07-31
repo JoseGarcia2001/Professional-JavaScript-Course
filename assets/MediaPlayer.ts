@@ -1,35 +1,25 @@
 class MediaPlayer {
+  media: HTMLMediaElement;
+  plugins: Array<any>;
+  pausedByUser: boolean;
   constructor(config) {
     (this.media = config.value), (this.plugins = config.plugins || []);
     this.pausedByUser = false;
-    this.player;
     this.autoRun();
   }
 
-  autoRun() {
-    console.log(this.pausedByUser);
-    this.player = {
-      media: this.media,
-      paused: this.pausedByUser,
-      get muted() {
-        return this.media.muted;
-      },
-      set muted(value) {
-        this.media.muted = value;
-      },
-    };
-
+  private autoRun() {
     this.plugins.forEach((plugin) => {
-      plugin.run(this.player);
+      plugin.run(this);
     });
   }
 
   playOrPause() {
     if (this.media.paused) {
-      this.player.paused = false;
+      this.pausedByUser = false;
       this.media.play();
     } else {
-      this.player.paused = true;
+      this.pausedByUser = true;
       this.media.pause();
     }
   }
