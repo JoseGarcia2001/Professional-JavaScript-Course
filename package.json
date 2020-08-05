@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Este proyecto es para el curso Profesional de JS",
   "scripts": {
-    "start": "parcel index.html ejercicios/index.html ejercicios/**/*.html"
+    "start": "parcel index.html ejercicios/index.html ejercicios/**/*.html ejercicios/**/**/*.html"
   },
   "author": "Jose Garcia",
   "license": "ISC",
