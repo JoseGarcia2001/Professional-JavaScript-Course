@@ -62,6 +62,47 @@ h1 {
   font-size: 70px;
 }
 
+.ads {
+  padding: 4px;
+  padding-right: 8px;
+  background: white;
+  width: 80%;
+
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.ads__link {
+  display: flex;
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.ads__img {
+  width: 80px;
+  min-width: 80px;
+  height: 80px;
+  margin-right: 16px;
+}
+
+.ads__info {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.ads__title {
+  color: black;
+  margin: 0;
+}
+.ads__body {
+  color: black;
+  margin: 0;
+}
+
 li {
   margin: 10px 0px;
 }
