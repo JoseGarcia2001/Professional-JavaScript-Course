@@ -1,6 +1,7 @@
 import MediaPlayer from "./MediaPlayer";
 import AutoPlay from "./plugins/AutoPlay";
 import AutoPause from "./plugins/AutoPause";
+import Ads from "./plugins/Ads";
 
 const PlayPause: HTMLElement = document.querySelector(".play_pause");
 const MuteUnmute: HTMLElement = document.querySelector(".mute_unmute");
@@ -8,7 +9,7 @@ const video = document.querySelector("video");
 
 const player = new MediaPlayer({
   value: video,
-  plugins: [new AutoPlay(), new AutoPause()],
+  plugins: [new AutoPlay(), new AutoPause(), new Ads()],
 });
 
 PlayPause.onclick = () => {
