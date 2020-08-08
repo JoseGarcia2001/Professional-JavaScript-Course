@@ -1,0 +1,19 @@
+{
+  "name": "@joga_dev/platzimediaplayer",
+  "version": "1.1.0",
+  "description": "This proyect implements a media player with plugins like autoPause, Ads and autoPlay",
+  "main": "lib/MediaPlayer.js",
+  "scripts": {
+    "build": "tsc src/**/*.ts src/plugins/*.ts src/plugins/Ads/*.ts --outDir lib",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "MediaPlayer",
+    "Joga_Dev",
+    "front-end",
+    "Frontend",
+    "TypeScript"
+  ],
+  "author": "Jose Garcia",
+  "license": "ISC"
+}

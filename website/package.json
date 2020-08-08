@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Este proyecto es para el curso Profesional de JS",
   "scripts": {
-    "start": "parcel index.html ejercicios/index.html ejercicios/**/*.html ejercicios/**/**/*.html"
+    "start": "parcel website/index.html index.html ejercicios/index.html ejercicios/**/*.html ejercicios/**/**/*.html"
   },
   "author": "Jose Garcia",
   "license": "ISC",
@@ -13,5 +13,8 @@
   },
   "browserslist": [
     "last 1 Chrome version"
-  ]
+  ],
+  "dependencies": {
+    "@joga_dev/platzimediaplayer": "^1.1.0"
+  }
 }

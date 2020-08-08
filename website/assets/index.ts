@@ -1,7 +1,7 @@
-import MediaPlayer from "./MediaPlayer";
-import AutoPlay from "./plugins/AutoPlay";
-import AutoPause from "./plugins/AutoPause";
-import Ads from "./plugins/Ads";
+import MediaPlayer from "@joga_dev/platzimediaplayer/src/MediaPlayer";
+import AutoPlay from "@joga_dev/platzimediaplayer/src/plugins/AutoPlay";
+import AutoPause from "@joga_dev/platzimediaplayer/src/plugins/AutoPause";
+import Ads from "@joga_dev/platzimediaplayer/src/plugins/Ads";
 
 const PlayPause: HTMLElement = document.querySelector(".play_pause");
 const MuteUnmute: HTMLElement = document.querySelector(".mute_unmute");
